@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Professional Survey Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="project_web_page.css" />
+        <link rel="stylesheet" href="gallery.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    
+    <body class="is-preload"> 
+        
+        <div id="wrapper">
+            <!--header-->
+            <header class="main_header">
+                <!--project title-->
+                <h1>
+                Data Professional Survey Analysis
+                </h1>
+            </header>
+            <div id="content-box">
+                        <section id="body-content">
+                            <p>
+                            In this Power-bi project, we do an analysis of a Data Professional Survey that was done and try to draw some insights from these data.
+                            The survey was taken from a total of 630 respondents targeting specifically those working in the data field. Here is a step to step walk through of the project.
+                            </p>
+                        </section>
+                        <section>
+                            <ol>
+                                <h2>
+                                    <li>Loading Data Into Power-bi</li>
+                                </h2>
+                                <p>
+                                    The first step was loading data into Power-bi. Power-bi accepts data from multiple data sources. Our data from the survey was stored in an Excel Workbook and so we use that option to load data into Power-bi. 
+                                    Instead of loading the data directly into Power-bi, we transform it to open the data in Power-Query for Data Cleaning. 
+                                </p>
+                                
+                                <h2>
+                                    <li>Data Cleaning/Data Transformation</li>
+                                </h2>
+                                <p>
+                                    After loading the data into Power-Query, I then cleaned the data to make it more usable. This involved: 
+                                    <Ul>
+                                        <li>
+                                            Removing unwanted columns
+                                            <div id="gallery1" class="gallery">
+                                                <div class="image-container">
+                                                    <img src="Data Profession Analysis Project Photos/data_cleaning/blank_columns_view.png" alt="Image">
+                                                    <div class="image-number">1/3</div>
+                                                </div>
+                                                <div class="nav-button left">&#10094;</div>
+                                                <div class="nav-button right">&#10095;</div>
+                                                <div class="dots"></div>
+                                            </div>
+                                            <!-- Fullscreen Modal -->
+                                            <div id="fullscreen-modal" class="fullscreen-modal">
+                                                <div class="fullscreen-container">
+                                                    <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                                    <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                                    <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                                    <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                                    <div class="exit-fullscreen">✖</div>
+                                                    <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Transforming the Job Title column specifically the 'other' entries in the column.
+                                            <div id="gallery2" class="gallery">
+                                                <div class="image-container">
+                                                    <img src="Data Profession Analysis Project Photos/data_cleaning/job_title_before.png" alt="Image">
+                                                    <div class="image-number">1/2</div>
+                                                </div>
+                                                <div class="nav-button left">&#10094;</div>
+                                                <div class="nav-button right">&#10095;</div>
+                                                <div class="dots"></div>
+                                            </div>
+                                            <!-- Fullscreen Modal -->
+                                            <div id="fullscreen-modal" class="fullscreen-modal">
+                                                <div class="fullscreen-container">
+                                                    <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                                    <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                                    <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                                    <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                                    <div class="exit-fullscreen">✖</div>
+                                                    <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Transforming the Favourite Programming Language column specifically the 'other' entries in the column.
+                                            <div id="gallery3" class="gallery">
+                                                <div class="image-container">
+                                                    <img src="Data Profession Analysis Project Photos/data_cleaning/program_lang_before.png" alt="Image">
+                                                    <div class="image-number">1/2</div>
+                                                </div>
+                                                <div class="nav-button left">&#10094;</div>
+                                                <div class="nav-button right">&#10095;</div>
+                                                <div class="dots"></div>
+                                            </div>
+                                            <!-- Fullscreen Modal -->
+                                            <div id="fullscreen-modal" class="fullscreen-modal">
+                                                <div class="fullscreen-container">
+                                                    <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                                    <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                                    <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                                    <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                                    <div class="exit-fullscreen">✖</div>
+                                                    <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Transforming the Country column specifically the 'other' entries in the column. This is to simplify the analysis as the respondents were from many different countries
+                                            <div id="gallery4" class="gallery">
+                                                <div class="image-container">
+                                                    <img src="Data Profession Analysis Project Photos/data_cleaning/country_before.png" alt="Image">
+                                                    <div class="image-number">1/2</div>
+                                                </div>
+                                                <div class="nav-button left">&#10094;</div>
+                                                <div class="nav-button right">&#10095;</div>
+                                                <div class="dots"></div>
+                                            </div>
+                                            <!-- Fullscreen Modal -->
+                                            <div id="fullscreen-modal" class="fullscreen-modal">
+                                                <div class="fullscreen-container">
+                                                    <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                                    <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                                    <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                                    <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                                    <div class="exit-fullscreen">✖</div>
+                                                    <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Transforming the Industry column specifically the 'other' entries in the column.
+                                            <div id="gallery5" class="gallery">
+                                                <div class="image-container">
+                                                    <img src="Data Profession Analysis Project Photos/data_cleaning/industry_before.png" alt="Image">
+                                                    <div class="image-number">1/2</div>
+                                                </div>
+                                                <div class="nav-button left">&#10094;</div>
+                                                <div class="nav-button right">&#10095;</div>
+                                                <div class="dots"></div>
+                                            </div>
+                                            <!-- Fullscreen Modal -->
+                                            <div id="fullscreen-modal" class="fullscreen-modal">
+                                                <div class="fullscreen-container">
+                                                    <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                                    <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                                    <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                                    <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                                    <div class="exit-fullscreen">✖</div>
+                                                    <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            Creating a new column of Average Salary from the salary column with ranges.
+                                            <div id="gallery6" class="gallery">
+                                                <div class="image-container">
+                                                    <img src="Data Profession Analysis Project Photos/data_cleaning/avg_income_formula.png" alt="Image">
+                                                    <div class="image-number">1/2</div>
+                                                </div>
+                                                <div class="nav-button left">&#10094;</div>
+                                                <div class="nav-button right">&#10095;</div>
+                                                <div class="dots"></div>
+                                            </div>
+                                            <!-- Fullscreen Modal -->
+                                            <div id="fullscreen-modal" class="fullscreen-modal">
+                                                <div class="fullscreen-container">
+                                                    <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                                    <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                                    <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                                    <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                                    <div class="exit-fullscreen">✖</div>
+                                                    <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </Ul>
+                                </p>
+                                
+                                <h2>
+                                    <li>Count of Survey Takers</li>
+                                </h2>
+                                <p>
+                                    We start our analysis by finding out how many people took the survey. We find there were a total of 630 survey takers. 
+                                    This is a good sample size to continue with our analysis and draw some meaningful insights that could actually be used for decision making by various stakeholders eg an employer or a person looking to enter the data field. 
+                                </p>
+                                <div id="gallery7" class="gallery">
+                                    <div class="image-container">
+                                        <img src="Data Profession Analysis Project Photos/Count of Respondents.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>Average Age of Respondents</li>
+                                </h2>
+                                <p>
+                                   It was also helpful to know the average age of respondents. This can help us better understand some of the choices or answers the respondents gave among other reasons. 
+                                   The average age of survey takers was 29.87 years. 
+                                </p>
+                                <div id="gallery8" class="gallery">
+                                    <div class="image-container">
+                                        <img src="Data Profession Analysis Project Photos/Avg Age of Respondents.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Average Salary by Job Title</li>
+                                </h2>
+                                <p>
+                                    The next stop was to determine which career or job title in the Data Field has the highest salary. 
+                                    We have 5 main career paths in the Data Field; Data Scientist, Data Analyst, Data Engineer, Data Architect and Database Developer, and try to compare their salaries. 
+                                </p>
+                                <p>
+                                    Doing this analysis, we find out that Data Scientist are paid the most averaging 94K USD while the least paid were the Database Developers averaging 33K USD. 
+                                    It is important to mention however, of the survery takers, most were Data Analyst and might be the more accurate representation of the real world average salary of Data analyst. 
+                                </p>
+                                <div id="gallery9" class="gallery">
+                                    <div class="image-container">
+                                        <img src="Data Profession Analysis Project Photos/Avg Sal By Job_title.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Country of Respondents</li>
+                                </h2>
+                                <p>
+                                    We then analyse the data to find out the country of Respondents. This will help us to filter down our analysis by country as some metrics are country based eg Salary. 
+                                </p>
+                                <div id="gallery10" class="gallery">
+                                    <div class="image-container">
+                                        <img src="Data Profession Analysis Project Photos/Country of Respondents.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Work/Life Balance</li>
+                                </h2>
+                                <p>
+                                We then tried to find out whether the people working in the data field are happy with their work/life balance. 
+                                This can help someone make a decision on whether to join the field if this is something that's important for them.
+                                </p>
+                                <div id="gallery11" class="gallery">
+                                    <div class="image-container">
+                                        <img src="Data Profession Analysis Project Photos/Happy with Work_life Bal.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Satisfaction with Salary</li>
+                                </h2>
+                                <p>
+                                We then tried to find out whether people are happy with the salaries they recieve on a scale of 10.
+                                </p>
+                                <div id="gallery12" class="gallery">
+                                    <div class="image-container">
+                                        <img src="Data Profession Analysis Project Photos/Happy with Sal.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Average Salary by Sex</li>
+                                </h2>
+                                <p>
+                                Finally, an important metric that various stakeholders can find useful was finding out the average salary by sex. 
+                                This can help someone know whether there's any gender bias in the field. The analysis revealed little difference in the wage gap 
+                                between the two genders with women earning slightly higher than their male counterparts in the sample taken.
+                                </p>
+                                <div id="gallery13" class="gallery">
+                                    <div class="image-container">
+                                        <img src="Data Profession Analysis Project Photos/Avg Sal by Sex.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Creating a Dashboard</li>
+                                </h2>
+                                <p>
+                                Finally we take all the visualizations created and combine them into a dashboard. 
+                                Here we can filter based on various metrics like country where the respondents live, job title etc and get more personalized analysis based on the insights you need from the data.
+                                </p>
+                                <div id="gallery14" class="gallery">
+                                    <div class="image-container">
+                                        <img src="Data Profession Analysis Project Photos/Final Dashboard.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <p>To download and view the full project on GitHub, <a href="https://github.com/Dennis-Muchemi/Data-Analysis-Portfolio-Projects/blob/main/Data%20Professional%20Survey%20Overview%20Power%20BI%20Project.pbix" target="_blank">click here</a>.</p>
+
+                            </ol>
+                        </section>
+                
+                    <section>
+                        <footer id="footer">
+                            <section class="split contact">
+                                <section class="alt">
+                                    <h3>Address</h3>
+                                    <p>Nairobi, Kenya</p>
+                                </section>
+                                <section>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:dennismuchemi401@gmail.com">dennismuchemi401@gmail.com</a></p>
+                                </section>
+                                <section>
+                                    <h3>Social</h3>
+                                    <ul class="icons alt">
+                                        <li><a href="https://www.linkedin.com/in/dennis-muchemi-6a72141a0/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                        <li><a href="https://github.com/Dennis-Muchemi/Data-Analysis-Portfolio-Projects" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </footer>
+                    </section>
+            </div>
+        </div>
+        <script src="gallery.js"></script>
+    </body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SQL Data Cleaning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="project_web_page.css" />
+        <link rel="stylesheet" href="gallery.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    
+    <body class="is-preload"> 
+        
+        <div id="wrapper">
+            <!--header-->
+            <header class="main_header">
+                <!--project title-->
+                <h1>
+                SQL Data Cleaning
+                </h1>
+            </header>
+            <div id="content-box">
+                        <section id="body-content">
+                            <p>
+                            In this SQL project, I use sql to clean data that can later be used for further analysis. Here is a step to step walk through of the project.
+                            </p>
+                        </section>
+                        <section>
+                            <ol>
+                                <h2>
+                                    <li>Creating a Database and Importing Data</li>
+                                </h2>
+                                <p>
+                                    I started by creating a new database and importing the data. 
+                                </p>
+                                <div id="gallery1" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/create_database_2.png" alt="Image">
+                                        <div class="image-number">1/2</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>Data Overview</li>
+                                </h2>
+                                <p>
+                                    I then had an overall overview of the data to understand it and to determine the what, where and how it would be cleaned.  
+                                </p>
+                                <div id="gallery2" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/overview_1.png" alt="Image">
+                                        <div class="image-number">1/2</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>Date Standardization</li>
+                                </h2>
+                                <p>
+                                   I then standardized the date column. This involved:
+                                   <ul>
+                                    <li> Converting the Sale Date column from Date-time format to date format. This however does not alter the column.</li>
+                                    <li>Adding a new column "sale_date_converted" to add the converted Sale Date Column.</li>
+                                    <li>Updating the new sale_date_converted column. We will later drop the SaleDate column.</li>
+                                    <li>Checking to see whether the new column has been added correctly.</li>
+                                   </ul>    
+                                </p>
+                                <div id="gallery3" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/date_time_to_date_convert.png" alt="Image">
+                                        <div class="image-number">1/4</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>Populating null/missing values in the Property Address column</li>
+                                </h2>
+                                <p>
+                                    I then went ahead to populate the missing values in the property address column. I observed that for the missing values, there was a similar row entry with the same parcel ID but different Unique IDs. 
+                                    So the next step was to populate the missing property address with the available property address of the other entry with the same parcel ID as they should be similar. 
+                                </p>
+                                <div id="gallery4" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/null_property_address.png" alt="Image">
+                                        <div class="image-number">1/3</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Splitting the Property Address Column</li>
+                                </h2>
+                                <p>
+                                    I then went ahead to split the property Address Column into the actual address and the associated city which are in one column. 
+                                </p>
+                                <div id="gallery5" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/property_address_view_before.png" alt="Image">
+                                        <div class="image-number">1/7</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Splitting the Owner Address Column</li>
+                                </h2>
+                                <p>
+                                    I then split the owner Address Column    
+                                </p>
+                                <div id="gallery6" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/owner_address_view_before.png" alt="Image">
+                                        <div class="image-number">1/9</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>SoldAsVacant column standardization</li>
+                                </h2>
+                                <p>
+                                    The next step was to standardize the SoldAsVacant column. The first step was to find out the values present and their count. This would give us a basis on how to standardize it based on the entries with the highest count. 
+                                    Since 'Yes' and 'No' have the highest count, we convert the Y and N into Yes and No respectively. This also makes it more understandable as Y and N can be confusing and open to misinterpretation on what they could mean.
+                                </p>
+                                <div id="gallery7" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/Y_N_Yes_No_view.png" alt="Image">
+                                        <div class="image-number">1/5</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Removing Duplicates</li>
+                                </h2>
+                                <p>
+                                    I then went ahead to remove duplicates in our value. This however is not standard practice and should be done with care. Alternatively, creating a working sheet from the original data for such manipulation is advisable while reserving  the original data as it is.    
+                                </p>
+                                <div id="gallery8" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/duplicates_select.png" alt="Image">
+                                        <div class="image-number">1/3</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Dropping Unused Columns</li>
+                                </h2>
+                                <p>
+                                    Finally, I finished off by deleting unused columns. This columns are Owner Address, TaxDistrict, PropertyAdress and SaleDate columns. 
+                                </p>
+                                <div id="gallery9" class="gallery">
+                                    <div class="image-container">
+                                        <img src="data_cleaning_sql_project_photos/columns_drop.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <p>To download and view the full project on GitHub, <a href="https://github.com/Dennis-Muchemi/Data-Analysis-Portfolio-Projects/blob/main/housing_data_cleaning_with_sql_project.sql" target="_blank">click here</a>.</p>
+
+                            </ol>
+                        </section>
+                
+                    <section>
+                        <footer id="footer">
+                            <section class="split contact">
+                                <section class="alt">
+                                    <h3>Address</h3>
+                                    <p>Nairobi, Kenya</p>
+                                </section>
+                                <section>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:dennismuchemi401@gmail.com">dennismuchemi401@gmail.com</a></p>
+                                </section>
+                                <section>
+                                    <h3>Social</h3>
+                                    <ul class="icons alt">
+                                        <li><a href="https://www.linkedin.com/in/dennis-muchemi-6a72141a0/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                        <li><a href="https://github.com/Dennis-Muchemi/Data-Analysis-Portfolio-Projects" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </footer>
+                    </section>
+            </div>
+        </div>
+        <script src="gallery.js"></script>
+    </body>
+</html>
