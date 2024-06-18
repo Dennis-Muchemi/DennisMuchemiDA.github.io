@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SQL Covid 19 Data Exploration</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="project_web_page.css" />
+        <link rel="stylesheet" href="gallery.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    
+    <body class="is-preload"> 
+        
+        <div id="wrapper">
+            <!--header-->
+            <header class="main_header">
+                <!--project title-->
+                <h1>
+                    SQL Covid 19 Data Exploration
+                </h1>
+            </header>
+            <div id="content-box">
+                        <section id="body-content">
+                            <p>
+                            In this SQL project, I use sql to explore covid 19 data and generate various insights. Here is a step to step walk through of the project.
+                            </p>
+                        </section>
+                        <section>
+                            <ol>
+                                <h2>
+                                    <li>Importing Data</li>
+                                </h2>
+                                <p>
+                                    I started by importing the two sheets of data for this project.  
+                                </p>
+                                <div id="gallery1" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/import_data_1.png" alt="Image">
+                                        <div class="image-number">1/2</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>Data Overview</li>
+                                </h2>
+                                <p>
+                                    I then had an overall overview of the data to understand it.  
+                                </p>
+                                <div id="gallery2" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/overview_1.png" alt="Image">
+                                        <div class="image-number">1/4</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>COVID-19 Case Fatality Analysis by Country</li>
+                                </h2>
+                                <p>
+                                    With this analysis, I examined the relationship between total reported cases and total deaths due to COVID-19 in various countries. 
+                                    By comparing these two metrics, we aim to determine the case fatality rate (CFR), which indicates the likelihood of dying if one contracts COVID-19. 
+                                    This measure is critical for understanding the severity of the disease in different regions    
+                                </p>
+                                <div id="gallery3" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/TotalCases_vs_TotalDeaths.png" alt="Image">
+                                        <div class="image-number">1/4</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>COVID-19 Infection Rate by Population</li>
+                                </h2>
+                                <p>
+                                    I then looked at Total Cases vs Population. This analysis investigates the proportion of the population that has been infected with COVID-19 by comparing total reported cases to the total population in various countries. 
+                                    By calculating this percentage, we aim to provide insights into the spread and prevalence of the virus within different regions.
+                                </p>
+                                <div id="gallery4" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/TotalCases_vs_Population_africa.png" alt="Image">
+                                        <div class="image-number">1/2</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Countries with the Highest COVID-19 Infection Rates</li>
+                                </h2>
+                                <p>
+                                    I then did another analysis focusing on identifying countries with the highest rates of COVID-19 infection relative to their population size. Here, we aim to highlight regions where the virus has spread most extensively in proportion to the number of inhabitants 
+                                </p>
+                                <div id="gallery5" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/highest_infection_rate.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Highest COVID-19 Death Rates</li>
+                                </h2>
+                                <p>
+                                    I then explored countries with the highest number of COVID-19 deaths relative to their population size. 
+                                    By examining this metric, we aim to identify regions where the impact of the virus in terms of mortality has been most severe compared to the number of inhabitantsfirst by country and second by continent.  
+                                </p>
+                                <div id="gallery6" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/highest_deathcount_per_population_country.png" alt="Image">
+                                        <div class="image-number">1/2</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Global Daily COVID-19 Trends: New Cases, Deaths, and Mortality Rate</li>
+                                </h2>
+                                <p>
+                                    I then did a global analysis of the data. This analysis provides a comprehensive overview of the daily global trends in the COVID-19 pandemic, focusing on three key metrics: the number of new cases, the number of new deaths, and the daily mortality rate. 
+                                    By examining these metrics, we aim to understand the ongoing impact of the virus on a global scale, identify patterns in the spread and severity of the disease.
+                                </p>
+                                <div id="gallery7" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/global_level_analysis.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>COVID-19 Vaccination Coverage: Population vs. Vaccinations</li>
+                                </h2>
+                                <p>
+                                    With this analysis, I examined the progress of COVID-19 vaccination efforts by comparing the total population with the number of individuals who have received at least one dose of the vaccine. 
+                                    By evaluating the percentage of the population that has been partially vaccinated, this aims to provide insights into the reach and effectiveness of vaccination campaigns worldwide. 
+                                    I employed the use of CTEs in the first instance and did the same analysis a second time using Temporary Tables.   
+                                </p>
+                                <div id="gallery8" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/TotalPopulation_vs_vaccinations.png" alt="Image">
+                                        <div class="image-number">1/4</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Creating a Data View for Future COVID-19 Visualizations</li>
+                                </h2>
+                                <p>
+                                    This final step involved setting up and storing a structured data view that will store comprehensive COVID-19 statistics, that will facilitate the creation of detailed visualizations. 
+                                    The view included key metrics such as continent, location, date, population and new population.
+                                </p>
+                                <div id="gallery9" class="gallery">
+                                    <div class="image-container">
+                                        <img src="covid19_DE_with_sql_project_photos/view_1.png" alt="Image">
+                                        <div class="image-number">1/3</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <p>To download and view the full project on GitHub, <a href="https://github.com/Dennis-Muchemi/Data-Analysis-Portfolio-Projects/blob/main/Covid19_DataExploration%20Project_with%20SQL.sql" target="_blank">click here</a>.</p>
+
+                            </ol>
+                        </section>
+                
+                    <section>
+                        <footer id="footer">
+                            <section class="split contact">
+                                <section class="alt">
+                                    <h3>Address</h3>
+                                    <p>Nairobi, Kenya</p>
+                                </section>
+                                <section>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:dennismuchemi401@gmail.com">dennismuchemi401@gmail.com</a></p>
+                                </section>
+                                <section>
+                                    <h3>Social</h3>
+                                    <ul class="icons alt">
+                                        <li><a href="https://www.linkedin.com/in/dennis-muchemi-6a72141a0/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                        <li><a href="https://github.com/Dennis-Muchemi/Data-Analysis-Portfolio-Projects" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </footer>
+                    </section>
+            </div>
+        </div>
+        <script src="gallery.js"></script>
+    </body>
+</html>
