@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EDA with Pandas Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="project_web_page.css" />
+        <link rel="stylesheet" href="gallery.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    
+    <body class="is-preload"> 
+        
+        <div id="wrapper">
+            <!--header-->
+            <header class="main_header">
+                <!--project title-->
+                <h1>
+                EDA with Pandas Project
+                </h1>
+            </header>
+            <div id="content-box">
+                        <section id="body-content">
+                            <p>
+                            In this python project, I did an Exploratory Data Analysis using Pandas, a python library. Here is a step to step walk through of the project.
+                            </p>
+                        </section>
+                        <section>
+                            <ol>
+                                <h2>
+                                    <li>Importing relevant python libraries</li>
+                                </h2>
+                                <p>
+                                    I started by importing the relevant python libraries that will be used to create this system. These libraries are; pandas, seaborn and matplotlib.pyplot. 
+                                    Pandas is a powerful data manipulation and analysis library for Python. Seaborn is a statistical data visualization library based on Matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. 
+                                    Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. pyplot is a module in Matplotlib that provides a MATLAB-like interface for plotting.
+                                </p>
+                                <div id="gallery1" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/import_libraries.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>Data Importation</li>
+                                </h2>
+                                <p>
+                                    The next step involved defining the path where the data was stored, importing the data and storing it in a data frame. 
+                                </p>
+                                <div id="gallery2" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/import_data.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>Data Standardization</li>
+                                </h2>
+                                <p>
+                                   I then standardized the data in our data frame to only round off and display all numbers to two decimal places.    
+                                </p>
+                                <div id="gallery3" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/2 decimal places.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+                                <h2>
+                                    <li>Basic analysis</li>
+                                </h2>
+                                <p>
+                                    I then went ahead to find out quick basic information about our data. The data had a total of 234 rows and 17 columns and the total number of missing values for each column indicated. 
+                                    The data types present in the data are objects, integers and floats. 
+                                </p>
+                                <div id="gallery4" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/data_info.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Summary Statistics</li>
+                                </h2>
+                                <p>
+                                    After finding out the basic information about the data, I then did some quick summary statistics of the data. 
+                                    This is a good first step to draw some quick analysis of the data.   
+                                </p>
+                                <div id="gallery5" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/data_stat_summary.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Null Values</li>
+                                </h2>
+                                <p>
+                                    I then wanted to know how many missing values are in our data and this can be useful for data cleaning to know one, if they are there and two, what to do about it.    
+                                </p>
+                                <div id="gallery6" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/null_values.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Unique Values</li>
+                                </h2>
+                                <p>
+                                    After finding out if there are null values, I also wanted to know the unique values in each column and together with the null value findings know if there is any data replication. 
+                                    For such data, It is hard to find repeating data as each country is unique in every metric. So if there are repeating values, we need to find out why and perhaps correct it.    
+                                </p>
+                                <div id="gallery7" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/unique_values.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Countries with highest Population</li>
+                                </h2>
+                                <p>
+                                    I then went ahead to find out top 5 countries with the highest populations in the world as at 2022. The first three as probably guessed were China, India and United States and 
+                                    interestingly Indonesia and Pakistan falling in number 4 and 5 respectively of the countries with the highest population count.    
+                                </p>
+                                <div id="gallery8" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/highest_population.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Correlations</li>
+                                </h2>
+                                <p>
+                                    I then tried to find a correlation between the columns. The diagonal values are all 1 because each column is perfectly correlated with itself.
+                                </p>
+                                <p>
+                                    Population columns are highly correlated with each other (values close to 1), indicating that countries with large populations in one year tend to have large populations in other years. This is expected as population sizes tend to change gradually over time. 
+                                    Area (km²) has a moderate positive correlation with population columns (around 0.45-0.53). Larger countries by area tend to have larger populations. 
+                                    Density (per km²) has very low correlation values with most columns, indicating that population density is not strongly related to the absolute population numbers or the area. 
+                                    Growth Rate has low correlation with other columns, suggesting that population growth rate is somewhat independent of the current population size, rank, and area.    
+                                    World Population Percentage is highly correlated with the population columns (values close to 1), as expected since it is directly derived from population numbers.    
+                                </p>
+                                <div id="gallery9" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/correlation.png" alt="Image">
+                                        <div class="image-number">1/2</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Continents Data Analysis</li>
+                                </h2>
+                                <p>
+                                    I then tried to draw analysis on a continent level. This involved summarizing and comparing average numeric attributes across different continents. This provides insights into how population characteristics (size, density, growth rate, etc.) vary across continents based on the available data. 
+                                    This analysis can be helpful in understanding regional trends and patterns in population dynamics.  We then focused on the 2022 data which is the latest data in our population data.   
+                                </p>
+                                <div id="gallery10" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/average_summary_continent.png" alt="Image">
+                                        <div class="image-number">1/2</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Oceania</li>
+                                </h2>
+                                <p>
+                                    For curiosity I delved into analysis of the Oceania continent to find out which countries countries constitute Oceania and their Population and Size distribution.     
+                                </p>
+                                <div id="gallery11" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/oceania.png" alt="Image">
+                                        <div class="image-number">1/1</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <li>Continents Mean Population Over the Years</li>
+                                </h2>
+                                <p>
+                                    I then find tried to find out the mean population distribution of each continent over the years. I then transposed the data and stored it in a new dataframe to be used later to plot a visual graph. 
+                                    Before plotting the graph, I try to find out the column names in our data frame for reference and accuracy of our graph. I then plot the population distribution line graph for visualization.
+                                </p>
+                                <div id="gallery12" class="gallery">
+                                    <div class="image-container">
+                                        <img src="EDA Project Photos/population_change.png" alt="Image">
+                                        <div class="image-number">1/4</div>
+                                    </div>
+                                    <div class="nav-button left">&#10094;</div>
+                                    <div class="nav-button right">&#10095;</div>
+                                    <div class="dots"></div>
+                                </div>
+                                <!-- Fullscreen Modal -->
+                                <div id="fullscreen-modal" class="fullscreen-modal">
+                                    <div class="fullscreen-container">
+                                        <img id="fullscreen-image" class="fullscreen-image" src="" alt="Fullscreen Image">
+                                        <div id="fullscreen-footnote" class="fullscreen-footnote"></div>
+                                        <div id="fullscreen-prev" class="nav-button">&#10094;</div>
+                                        <div id="fullscreen-next" class="nav-button">&#10095;</div>
+                                        <div class="exit-fullscreen">✖</div>
+                                        <div id="image-number-fullscreen" class="image-number-fullscreen"></div>
+                                    </div>
+                                </div>
+
+                                <p>To download and view the full project on GitHub, <a href="https://github.com/Dennis-Muchemi/Data-Analysis-Portfolio-Projects/blob/main/Exploratory%20Data%20Analysis%20with%20Pandas%20Project.ipynb" target="_blank">click here</a>.</p>
+
+                            </ol>
+                        </section>
+                
+                    <section>
+                        <footer id="footer">
+                            <section class="split contact">
+                                <section class="alt">
+                                    <h3>Address</h3>
+                                    <p>Nairobi, Kenya</p>
+                                </section>
+                                <section>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:dennismuchemi401@gmail.com">dennismuchemi401@gmail.com</a></p>
+                                </section>
+                                <section>
+                                    <h3>Social</h3>
+                                    <ul class="icons alt">
+                                        <li><a href="https://www.linkedin.com/in/dennis-muchemi-6a72141a0/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                        <li><a href="https://github.com/Dennis-Muchemi/Data-Analysis-Portfolio-Projects" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </footer>
+                    </section>
+            </div>
+        </div>
+        <script src="gallery.js"></script>
+    </body>
+</html>
